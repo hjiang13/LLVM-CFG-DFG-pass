@@ -1,0 +1,50 @@
+digraph "DFG for'main' function" {
+	Node0x556a52012a20[shape=ellipse, label="i32 0\l0x556a52012a20"];
+	Node0x556a52012a90[shape=record, label="  store i32 0, i32* %1, align 4"];
+	Node0x556a520128a0[shape=record, label="  %1 = alloca i32, align 4"];
+	Node0x556a52012ae0[shape=ellipse, label="i32 10\l0x556a52012ae0"];
+	Node0x556a52012b50[shape=record, label="  store i32 10, i32* %2, align 4"];
+	Node0x556a52012930[shape=record, label="  %2 = alloca i32, align 4"];
+	Node0x556a52012bc0[shape=record, label="  %4 = load i32, i32* %2, align 4"];
+	Node0x556a52012ca0[shape=record, label="  store i32 %4, i32* %3, align 4"];
+	Node0x556a520129d0[shape=record, label="  %3 = alloca i32, align 4"];
+	Node0x556a52012d10[shape=record, label="  %5 = load i32, i32* %2, align 4"];
+	Node0x556a52012d80[shape=record, label="  %6 = load i32, i32* %3, align 4"];
+	Node0x556a52012e30[shape=record, label="  %7 = call i32 @add(i32 %5, i32 %6)"];
+	Node0x556a52012f00[shape=record, label="  ret i32 %7"];
+	Node0x556a520128a0 -> Node0x556a52012930
+	Node0x556a52012930 -> Node0x556a520129d0
+	Node0x556a520129d0 -> Node0x556a52012a90
+	Node0x556a52012a90 -> Node0x556a52012b50
+	Node0x556a52012b50 -> Node0x556a52012bc0
+	Node0x556a52012bc0 -> Node0x556a52012ca0
+	Node0x556a52012ca0 -> Node0x556a52012d10
+	Node0x556a52012d10 -> Node0x556a52012d80
+	Node0x556a52012d80 -> Node0x556a52012e30
+	Node0x556a52012e30 -> Node0x556a52012f00
+edge [color=red]
+	Node0x556a52012a20 -> Node0x556a52012a90
+	Node0x556a52012a90 -> Node0x556a520128a0
+	Node0x556a52012ae0 -> Node0x556a52012b50
+	Node0x556a52012b50 -> Node0x556a52012930
+	Node0x556a52012930 -> Node0x556a52012bc0
+	Node0x556a52012bc0 -> Node0x556a52012ca0
+	Node0x556a52012ca0 -> Node0x556a520129d0
+	Node0x556a520129d0 -> Node0x556a52012d80
+	Node0x556a52012d80 -> Node0x556a52012e30
+	Node0x556a52012e30 -> Node0x556a52012f00
+	Node0x556a52012930 -> Node0x556a52012d10
+	Node0x556a52012d10 -> Node0x556a52012e30
+}
+digraph "DFG for'main' function" {
+	Node0x564138eb69f0[shape=ellipse, label="i32 0\l0x564138eb69f0"];
+	Node0x564138eb6a60[shape=record, label="  store i32 0, i32* %1, align 4"];
+	Node0x564138eb6980[shape=record, label="  %1 = alloca i32, align 4"];
+	Node0x564138eb6980 -> Node0x564138eb6a60
+	Node0x564138eb6a60 -> Node0x564138eb6b80
+	Node0x564138eb6b80 -> Node0x564138eb6c80
+	Node0x564138eb6c80 -> Node0x564138eb6d50
+edge [color=red]
+	Node0x564138eb69f0 -> Node0x564138eb6a60
+	Node0x564138eb6a60 -> Node0x564138eb6980
+}

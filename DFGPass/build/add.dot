@@ -1,0 +1,29 @@
+digraph "DFG for'add' function" {
+	Node0x556a52011bf0[shape=ellipse, label="i32 %0\l0x556a52011bf0"];
+	Node0x556a520124c0[shape=record, label="  store i32 %0, i32* %3, align 4"];
+	Node0x556a52011d30[shape=record, label="  %3 = alloca i32, align 4"];
+	Node0x556a52011c18[shape=ellipse, label="i32 %1\l0x556a52011c18"];
+	Node0x556a52012550[shape=record, label="  store i32 %1, i32* %4, align 4"];
+	Node0x556a520123e0[shape=record, label="  %4 = alloca i32, align 4"];
+	Node0x556a520125c0[shape=record, label="  %5 = load i32, i32* %3, align 4"];
+	Node0x556a52012630[shape=record, label="  %6 = load i32, i32* %4, align 4"];
+	Node0x556a520126c0[shape=record, label="  %7 = add nsw i32 %5, %6"];
+	Node0x556a52012730[shape=record, label="  ret i32 %7"];
+	Node0x556a52011d30 -> Node0x556a520123e0
+	Node0x556a520123e0 -> Node0x556a520124c0
+	Node0x556a520124c0 -> Node0x556a52012550
+	Node0x556a52012550 -> Node0x556a520125c0
+	Node0x556a520125c0 -> Node0x556a52012630
+	Node0x556a52012630 -> Node0x556a520126c0
+	Node0x556a520126c0 -> Node0x556a52012730
+edge [color=red]
+	Node0x556a52011bf0 -> Node0x556a520124c0
+	Node0x556a520124c0 -> Node0x556a52011d30
+	Node0x556a52011d30 -> Node0x556a520125c0
+	Node0x556a520125c0 -> Node0x556a520126c0
+	Node0x556a520126c0 -> Node0x556a52012730
+	Node0x556a52011c18 -> Node0x556a52012550
+	Node0x556a52012550 -> Node0x556a520123e0
+	Node0x556a520123e0 -> Node0x556a52012630
+	Node0x556a52012630 -> Node0x556a520126c0
+}

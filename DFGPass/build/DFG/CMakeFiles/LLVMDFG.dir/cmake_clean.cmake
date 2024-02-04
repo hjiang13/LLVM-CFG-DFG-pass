@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LLVMDFG.dir/DFG.cpp.o"
+  "CMakeFiles/LLVMDFG.dir/DFG.cpp.o.d"
   "libLLVMDFG.pdb"
   "libLLVMDFG.so"
 )

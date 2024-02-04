@@ -1,16 +1,14 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/leon/Desktop/pass/CFG&DFG/DFGPass/DFG/DFG.cpp" "/home/leon/Desktop/pass/CFG&DFG/DFGPass/build/DFG/CMakeFiles/LLVMDFG.dir/DFG.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/llvm/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/hjiang/LLVM-CFG-DFG-pass/DFGPass/DFG/DFG.cpp" "DFG/CMakeFiles/LLVMDFG.dir/DFG.cpp.o" "gcc" "DFG/CMakeFiles/LLVMDFG.dir/DFG.cpp.o.d"
   )
 
 # Targets to which this target links.

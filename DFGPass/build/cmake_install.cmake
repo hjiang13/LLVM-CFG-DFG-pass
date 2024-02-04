@@ -1,4 +1,4 @@
-# Install script for directory: /home/leon/Desktop/pass/CFG&DFG/DFGPass
+# Install script for directory: /home/hjiang/LLVM-CFG-DFG-pass/DFGPass
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,9 +37,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/leon/Desktop/pass/CFG&DFG/DFGPass/build/DFG/cmake_install.cmake")
+  include("/home/hjiang/LLVM-CFG-DFG-pass/DFGPass/build/DFG/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/leon/Desktop/pass/CFG&DFG/DFGPass/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hjiang/LLVM-CFG-DFG-pass/DFGPass/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

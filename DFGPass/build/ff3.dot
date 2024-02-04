@@ -1,0 +1,27 @@
+digraph "DFG for'ff3' function" {
+	Node0x564138eb5e30[shape=ellipse, label="i32 1\l0x564138eb5e30"];
+	Node0x564138eb6070[shape=record, label="  store i32 1, i32* %1, align 4"];
+	Node0x564138eb5de0[shape=record, label="  %1 = alloca i32, align 4"];
+	Node0x564138eb60e0[shape=record, label="  %3 = load i32, i32* %1, align 4"];
+	Node0x564138eb6170[shape=record, label="  %4 = icmp eq i32 %3, 1"];
+	Node0x564138eb6350[shape=record, label="  br i1 %4, label %5, label %6"];
+	Node0x564138eb5de0 -> Node0x564138eb5f50
+	Node0x564138eb5f50 -> Node0x564138eb6070
+	Node0x564138eb6070 -> Node0x564138eb60e0
+	Node0x564138eb60e0 -> Node0x564138eb6170
+	Node0x564138eb6170 -> Node0x564138eb6350
+	Node0x564138eb6350 -> Node0x564138eb63c0
+	Node0x564138eb63c0 -> Node0x564138eb64e0
+	Node0x564138eb64e0 -> Node0x564138eb6690
+	Node0x564138eb6690 -> Node0x564138eb6760
+	Node0x564138eb6760 -> Node0x564138eb6810
+	Node0x564138eb6350 -> Node0x564138eb6550
+	Node0x564138eb6550 -> Node0x564138eb6620
+	Node0x564138eb6620 -> Node0x564138eb6690
+edge [color=red]
+	Node0x564138eb5e30 -> Node0x564138eb6070
+	Node0x564138eb6070 -> Node0x564138eb5de0
+	Node0x564138eb5de0 -> Node0x564138eb60e0
+	Node0x564138eb60e0 -> Node0x564138eb6170
+	Node0x564138eb6170 -> Node0x564138eb6350
+}

@@ -8,11 +8,13 @@
 #include <llvm/Support/raw_ostream.h>
 #include <llvm/IR/Use.h>
 #include <llvm/Analysis/CFG.h>
+#include <llvm/ADT/StringRef.h>
 #include <list>
 #include<vector>
 #include<string>
 #include<set>
 #include<map>
+#include <typeinfo>
 
 using std::string;
 using std::vector;
